@@ -67,8 +67,6 @@ public class App extends Application {
         }));
         timeline.setCycleCount(Timeline.INDEFINITE);
         timeline.play();
-
-
     }
 
     public static void main(String[] args) {
