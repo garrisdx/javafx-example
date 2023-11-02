@@ -48,9 +48,6 @@ public class App extends Application {
 
                 Bounds bounds = pane.getBoundsInLocal();
 
-                System.out.println(bounds.getMinX());
-                System.out.println(bounds.getMaxX());
-
                 if(circle.getLayoutX() <= (bounds.getMinX() + circle.getRadius()) ||
                         circle.getLayoutX() >= (bounds.getMaxX() - circle.getRadius())) {
                     System.out.println("Out of bounds X " + circle.getLayoutX());
@@ -60,7 +57,6 @@ public class App extends Application {
 
                 if(circle.getLayoutY() <= (bounds.getMinY() + circle.getRadius()) ||
                         circle.getLayoutY() >= (bounds.getMaxY() - circle.getRadius())) {
-                    System.out.println("Out of bounds Y " + circle.getLayoutY());
                     dy = -dy;
                 }
             }
